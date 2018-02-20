@@ -567,7 +567,7 @@ public class VideoPicturePickerActivity extends Activity {
                 {
                         MediaStore.Video.VideoColumns.DATA,
                         MediaStore.Video.VideoColumns.BUCKET_DISPLAY_NAME,
-                        MediaStore.Video.VideoColumns.DURATION,
+                        MediaStore.Video.VideoColumns.DURATION-1800,
                         MediaStore.Video.VideoColumns.DATE_ADDED
                 };
 
