@@ -12,9 +12,9 @@ Cordova  plugin allows selection of  image(s)/videos(s) with a smart preview  in
 The plugin conforms to the Cordova plugin specification, it can be installed
 using the Cordova / Phonegap command line interface.
 
-    phonegap plugin add https://github.com/newsof1111/cordova-plugin-video-picture-preview-picker-V2.git
+    phonegap plugin add https://github.com/lalit-mohan-negi/cordova-plugin-video-picture-preview-picker-V2.git
 
-    cordova plugin add https://github.com/newsof1111/cordova-plugin-video-picture-preview-picker-V2.git
+    cordova plugin add https://github.com/lalit-mohan-negi/cordova-plugin-video-picture-preview-picker-V2.git
 
 
 ## Using the plugin
