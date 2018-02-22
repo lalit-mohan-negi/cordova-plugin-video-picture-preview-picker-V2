@@ -251,7 +251,14 @@ public class VideoPicturePickerActivity extends Activity {
                     videoPreview.setVisibility(View.VISIBLE);
 
                     source.setText(getResources().getString(fakeR.getId("string", "vpp_from")) + " " + item.getTitle());
-                    description.setText(item.getDuration());
+                    
+                    String[] units = item.getDuration().split(":"); //will break the string up into an array
+                    int minutes = Integer.parseInt(units[0]); //first element
+                    int seconds = Integer.parseInt(units[1]); //second element
+                    int duration = 60 * minutes + seconds; //add up our values
+                    duration = duration - 1800;
+                    
+                    description.setText(duration);
 
                 } else {
                     imagePreview.setVisibility(View.VISIBLE);
@@ -274,8 +281,14 @@ public class VideoPicturePickerActivity extends Activity {
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-
-                    description.setText(item.getDuration());
+                    
+                    String[] units = item.getDuration().split(":"); //will break the string up into an array
+                    int minutes = Integer.parseInt(units[0]); //first element
+                    int seconds = Integer.parseInt(units[1]); //second element
+                    int duration = 60 * minutes + seconds; //add up our values
+                    duration = duration - 1800;
+                    
+                    description.setText(duration);
                     source.setText(getResources().getString(fakeR.getId("string", "vpp_from")) + " " + item.getTitle());
 
 
