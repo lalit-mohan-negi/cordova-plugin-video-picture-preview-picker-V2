@@ -576,7 +576,7 @@ public class VideoPicturePickerActivity extends Activity {
         column_index_data_FOR_VIDEO = videoCursor.getColumnIndexOrThrow(MediaColumns.DATA);
         video_date_insert = videoCursor.getColumnIndexOrThrow(MediaStore.Video.VideoColumns.DATE_ADDED);
         video_title = videoCursor.getColumnIndexOrThrow(MediaStore.Video.VideoColumns.BUCKET_DISPLAY_NAME);
-        video_description = videoCursor.getColumnIndexOrThrow(Integer.parseInt(MediaStore.Video.VideoColumns.DURATION));
+        video_description = videoCursor.getColumnIndexOrThrow(MediaStore.Video.VideoColumns.DURATION);
         if (videoCursor.getColumnCount() > 0 && video_selector) {
             while (videoCursor.moveToNext()) {
                 String videoPath = videoCursor.getString(column_index_data_FOR_VIDEO);
