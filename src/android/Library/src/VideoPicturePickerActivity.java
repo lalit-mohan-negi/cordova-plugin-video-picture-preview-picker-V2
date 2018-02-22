@@ -251,7 +251,7 @@ public class VideoPicturePickerActivity extends Activity {
                     videoPreview.setVisibility(View.VISIBLE);
 
                     source.setText(getResources().getString(fakeR.getId("string", "vpp_from")) + " " + item.getTitle());
-                    int itemss = item.getDuration()
+                    int itemss = item.getDuration();
                     itemss =  itemss-1800;
                     description.setText(itemss);
 
@@ -276,7 +276,7 @@ public class VideoPicturePickerActivity extends Activity {
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-                    int itemss = item.getDuration()
+                    int itemss = item.getDuration();
                     itemss =  itemss-1800;
                     description.setText(itemss);
                     source.setText(getResources().getString(fakeR.getId("string", "vpp_from")) + " " + item.getTitle());
