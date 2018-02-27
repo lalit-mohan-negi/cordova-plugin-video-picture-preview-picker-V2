@@ -241,7 +241,31 @@ public class VideoPicturePickerActivity extends Activity {
 
 
                 if (item.isVideo()) {
+                    
+                        AlertDialog alertDialog = new AlertDialog.Builder(
+                                                AlertDialogActivity.this).create();
 
+                                // Setting Dialog Title
+                                alertDialog.setTitle("Alert Dialog Video Length");
+
+                                // Setting Dialog Message
+                                alertDialog.setMessage(item.getDuration());
+
+                                // Setting Icon to Dialog
+                                alertDialog.setIcon(R.drawable.tick);
+
+                                // Setting OK Button
+                                alertDialog.setButton("OK", new DialogInterface.OnClickListener() {
+                                        public void onClick(DialogInterface dialog, int which) {
+                                        // Write your code here to execute after dialog closed
+                                        Toast.makeText(getApplicationContext(), "You clicked on OK", Toast.LENGTH_SHORT).show();
+                                        }
+                                });
+
+                                // Showing Alert Message
+                                alertDialog.show();
+                    
+                    
                     imageVideoContainer.setBackgroundResource(fakeR.getId("color", "Black"));
                     fullscreen.setVisibility(View.VISIBLE);
                     imagePreview.setVisibility(View.GONE);
