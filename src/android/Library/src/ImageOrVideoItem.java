@@ -4,7 +4,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Comparator;
 import java.util.Date;
-
+import java.util.TimeZone;
 import android.graphics.Bitmap;
 
 public class ImageOrVideoItem {
