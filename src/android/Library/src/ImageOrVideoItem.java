@@ -34,6 +34,7 @@ public class ImageOrVideoItem {
 		{
 			Date date = new Date(Integer.parseInt(Duration));
 			DateFormat formatter = new SimpleDateFormat("mm:ss");
+			formatter.setTimeZone(TimeZone.getTimeZone("America/Los_Angeles"));
 			this.setDuration(formatter.format(date));
 		} else
 			this.setDuration(Duration);
